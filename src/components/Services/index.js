@@ -20,10 +20,10 @@ function Services() {
             <Card className="Frontend__Content__Card">
               <div className="Frontend__Content__Card__Content">
                 <Typography className="Frontend__Content__Card__Content__Text">
-                  Researching the software's targeted audience, our specialists
+                  {/* Researching the software's targeted audience, our specialists
                   identify priorities and principles that will establish the
                   future design. Our designers create the best possible sketches
-                  on the basis of UI / UX principles and present them to you.
+                  on the basis of UI / UX principles and present them to you. */}
                   <br />
                   <br />
                   Ocron is helping businesses go mobile in multiple industries,
@@ -31,11 +31,13 @@ function Services() {
                   estate, and more.
                   <br />
                   <br />
-                  Our web development services are backed by a team of
+                  {/* Our web development services are backed by a team of
                   battle-tested engineers experienced in multiple types of web
                   software and industries. We deliver web systems of any size
                   and complexity — from budding startup products to high-end
-                  enterprise solutions.
+                  enterprise solutions. */}
+                  We deliver web systems of any size and complexity — from budding
+                  startup products to high-end enterprise solutions.
                 </Typography>
               </div>
             </Card>
@@ -50,10 +52,10 @@ function Services() {
             <Card className="Backend__Content__Card">
               <div className="Backend__Content__Card__Content">
                 <Typography className="Backend__Content__Card__Content__Text">
-                  Our developers have vast experience in backend application
+                  {/* Our developers have vast experience in backend application
                   development. This enables us to provide the best fitting
                   platform and infrastructure software stack based on project
-                  requirements.
+                  requirements. */}
                   <br />
                   <br />
                   We provide a combination of programming including database

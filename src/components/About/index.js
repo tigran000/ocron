@@ -28,8 +28,8 @@ function About() {
             Ocron is a software development company based in Armenia.
           </h1>
           <p className="About__Content__Text">
-            We deliver highly functional, innovative IT solutions to our clients
-            worldwide. We believe that passion, commitment and technology push
+            We deliver highly functional, innovative IT solutions{/*to our clients
+            worldwide*/ }. We believe that passion, commitment and technology push
             us all forward. Through strategy, design, content, and technology,
             we bring your ideas to life. The talent we cultivate shows in
             everything – from what we design and produce, to what we value and
