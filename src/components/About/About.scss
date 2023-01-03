@@ -1,0 +1,61 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 90px;
+  overflow: hidden;
+
+  &__Content {
+    max-width: 700px;
+
+    &__Title {
+      font-size: 5rem;
+      font-family: Quarto A, Quarto B, Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+      letter-spacing: -0.012em;
+      line-height: 1;
+      font-weight: 800;
+      color: #222222;
+      text-align: center;
+    }
+
+    &__Text {
+      margin-top: 35px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-family: Helvetica Neue, helvetica, arial, sans-serif;
+      line-height: 1.72;
+      font-weight: 300;
+      color: #222222;
+    }
+  }
+
+  &__Image {
+    position: relative;
+  }
+
+  @media only screen and (max-height: 700px) {
+    &__Image {
+      height: 400px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    &__Content {
+      margin: 0px 20px;
+
+      &__Title {
+        font-size: 3.5rem !important;
+      }
+
+      &__Text {
+        font-size: 1.7rem !important;
+      }
+    }
+
+    &__Image {
+      height: 500px;
+    }
+  }
+}

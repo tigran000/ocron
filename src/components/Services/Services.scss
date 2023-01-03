@@ -1,0 +1,201 @@
+$black-card-color: rgba(
+  $color: black,
+  $alpha: 0.8
+);
+
+$white-card-color: rgba(
+  $color: white,
+  $alpha: 0.9
+);
+
+.Header {
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__Title {
+    font-size: 5rem !important;
+    font-family: Quarto A, Quarto B, Baskerville, Baskerville Old Face,
+      Hoefler Text, Garamond, Times New Roman, serif !important;
+    letter-spacing: 0.2em !important;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 900px) {
+    height: 120px;
+
+    &__Title {
+      font-size: 4rem !important;
+    }
+  }
+}
+
+.Frontend {
+  background-image: url("../../assets/images/services/frontend.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__Content {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    &__Title {
+      font-size: 4rem !important;
+      font-weight: 700 !important;
+      margin-left: 12px !important;
+    }
+
+    &__Line {
+      height: 3px;
+      background-color: rgba($color: white, $alpha: 0.3);
+      flex-grow: 2;
+      margin-top: 4px;
+    }
+
+    &__Card {
+      width: 40%;
+      border-radius: 0 !important;
+      background-color: $white-card-color !important;
+
+      &__Content {
+        margin: 20px;
+
+        &__Text {
+          color: black;
+          font-size: 1.7rem !important;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    height: inherit;
+    min-height: 100vh;
+    justify-content: center;
+
+    &__Content {
+      width: 70%;
+      margin: 40px 0;
+      flex-direction: column;
+      align-items: center;
+
+      &__Title {
+        width: 80%;
+        color: white;
+        text-align: center;
+        margin-bottom: 40px !important;
+        margin-right: 0 !important;
+      }
+
+      &__Card {
+        width: 100%;
+
+        &__Content {
+          &__Text {
+            font-size: 1.6rem !important;
+          }
+        }
+      }
+
+      &__Line {
+        display: none;
+      }
+    }
+  }
+}
+
+.Backend {
+  background-image: url("../../assets/images/services/backend.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__Content {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+
+    &__Title {
+      font-size: 4rem !important;
+      font-weight: 700 !important;
+      margin-right: 12px !important;
+      color: white;
+    }
+
+    &__Line {
+      height: 3px;
+      background-color: rgba($color: black, $alpha: 0.2);
+      flex-grow: 2;
+      margin-top: 4px;
+    }
+
+    &__Card {
+      width: 40%;
+      border-radius: 0 !important;
+      background-color: $black-card-color !important;
+
+      &__Content {
+        margin: 20px;
+
+        &__Text {
+          color: white;
+          font-size: 1.7rem !important;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    height: inherit;
+    min-height: 100vh;
+    justify-content: center;
+
+    &__Content {
+      width: 70%;
+      margin: 40px 0;
+      flex-direction: column;
+      align-items: center;
+
+      &__Title {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 40px !important;
+        margin-right: 0 !important;
+      }
+
+      &__Card {
+        width: 100%;
+
+        &__Content {
+          &__Text {
+            font-size: 1.6rem !important;
+          }
+        }
+      }
+
+      &__Line {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.Footer {
+  padding: 60px 0 40px 0;
+  background-color: #222222;
+
+  &__Container {
+    padding: 0 16px;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+
+    &__Contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__Title {
+        color: white;
+        text-transform: uppercase;
+        font-family: Avenir Next W01 Light, Helvetica Neue, helvetica, arial,
+          sans-serif;
+        font-weight: 600;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        padding-bottom: 16px;
+      }
+
+      &__Text {
+        color: #acacac;
+        font-family: Avenir Next W01 Light, Helvetica Neue, helvetica, arial,
+          sans-serif;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        padding-top: 8px;
+      }
+
+      &__Icons {
+        padding-top: 14px;
+        margin-left: -12px;
+
+        &__IconButton {
+          &__Icon {
+            color: white;
+            font-size: 26px !important;
+          }
+        }
+      }
+    }
+    &__CopyrightWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &__IconButton {
+        margin-right: -12px !important;
+
+        &__Icon {
+          color: white;
+          border: 3px solid white;
+          border-radius: 100%;
+          font-size: 26px !important;
+          padding: 6px;
+        }
+      }
+
+      &__Copyright {
+        color: #acacac;
+        font-family: Avenir Next W01 Light, Helvetica Neue, helvetica, arial,
+          sans-serif;
+        text-align: end;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

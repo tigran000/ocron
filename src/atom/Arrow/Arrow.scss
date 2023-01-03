@@ -1,0 +1,32 @@
+.Arrow {
+  box-sizing: border-box;
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 2px 2px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  animation: arrow-appear 2s forwards 2.6s;
+  visibility: hidden;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes arrow-appear {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.Arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}

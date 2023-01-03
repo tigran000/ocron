@@ -1,0 +1,156 @@
+.LandingPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  animation: 0s reveal-background forwards 7s;
+
+  &__Background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    color: white;
+    animation: 10s make-black forwards 3s;
+  }
+
+  &__Main {
+    margin-top: -30px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+
+    &__Title {
+      font-size: 7rem;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    &__Buttons {
+      display: flex;
+      justify-content: space-around;
+
+      &__Services {
+        width: 240px !important;
+        height: 60px !important;
+        border-radius: 0 !important;
+        margin-left: 10px !important;
+        font-size: 1.7rem !important;
+        letter-spacing: 3px !important;
+        color: white !important;
+        border-color: white !important;
+      }
+
+      &__Contact {
+        width: 240px !important;
+        height: 60px !important;
+        border-radius: 0 !important;
+        margin-right: 10px !important;
+        font-size: 1.7rem !important;
+        letter-spacing: 3px !important;
+        color: white !important;
+        border-color: white !important;
+      }
+    }
+  }
+
+  &__LetsTalk {
+    font-size: 3rem;
+    color: white;
+    background: none;
+    border: 1px solid white;
+  }
+
+  &__BackgroundVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -5;
+  }
+
+  &__Logo {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    z-index: 10;
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  &__Arrow {
+    position: absolute;
+    bottom: 90px;
+    z-index: 10;
+  }
+
+  @media only screen and (max-height: 700px) {
+    &__Main {
+      &__Buttons {
+        &__Services {
+          font-size: 1.5rem !important;
+        }
+
+        &__Contact {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    &__Main {
+      &__Title {
+        font-size: 4.2rem;
+      }
+
+      &__Buttons {
+        flex-direction: column;
+        align-items: center;
+
+        &__Services {
+          margin: 20px 0 15px 0 !important;
+          font-size: 1.5rem !important;
+        }
+
+        &__Contact {
+          margin: 0 !important;
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
+
+@keyframes make-black {
+  40% {
+    background-color: black;
+  }
+  45% {
+    background-color: black;
+  }
+  100% {
+    background-color: rgba($color: black, $alpha: 0.93);
+  }
+}
+
+@keyframes reveal-background {
+  from {
+  }
+  to {
+    background-image: url("../../assets/images/services/frontend.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
