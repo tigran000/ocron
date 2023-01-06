@@ -17,7 +17,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import "./Contacts.scss";
 
 const black = "#222222";
-const serviceUrl = "https://ocron.herokuapp.com";
+const serviceUrl = "https://mailer-nky6.onrender.com/sender";
 
 const successMessage = (
   <DialogContentText
