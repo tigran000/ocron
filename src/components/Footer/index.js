@@ -24,7 +24,7 @@ const goToTop = () => {
 function Footer() {
   return (
     <Fade bottom duration={1500}>
-      <footer className="Footer1">
+      <footer className="Footer">
         <div className="Footer__Container">
           <div className="Footer__Container__Contacts">
             <h4 className="Footer__Container__Contacts__Title">Get In Touch</h4>
