@@ -1,0 +1,63 @@
+{
+  "Home": {
+    "Landing": {
+      "Title": "We build software",
+      "OurBlog": "InApp Blog",
+      "OurWork": "Our Work"
+    },
+    "About": {
+      "Title": "Custom software development company delivering cutting edge engineering solutions",
+      "Subtitle": "Ocron Technologies delivers highly functional, innovative IT solutions to transform your ideas into solutions. Through strategy, design, content, and technology, we bring your ideas to life. The talent we cultivate shows in everything – from what we design and produce, to what we value and believe."
+    },
+    "Services": {
+      "Mobile": {
+        "BigTitle": "Mobile",
+        "Title": "Mobile Solutions",
+        "Text": "Researching the software's targeted audience, our specialists identify priorities and principles that will establish the future design. Our designers create the best possible sketches on the basis of UI / UX principles and present them to you. Ocron is helping businesses go mobile in multiple industries, including eLearning, eCommerce, travel & hospitality, real estate, and more. Going mobile will help your business simplify operations, bring value to the demanding modern customers, and help you tackle Big Data. Whether it is your first app or the fifth, our expertise in mobile development will help you succeed with your mobile strategy."
+      },
+      "Web": {
+        "BigTitle": "Web",
+        "Title": "Web Solutions",
+        "Text": "Our web development services are backed by a team of battle-tested engineers experienced in multiple types of web software and industries. We deliver web systems of any size and complexity, from budding startup products to high-end enterprise solutions. Ocron team will help you by choosing the best technology for your project and deliver productive, engaging and reliable web solutions that bring you the business outcomes that you deserve. We constantly adjust our technology stack and expertise to guarantee the right balance between bleeding edge technology and long term maintainability in our projects."
+      },
+      "Back": {
+        "BigTitle": "Backend",
+        "Title": "Backend Solutions",
+        "Text": "Our developers have vast experience in backend application development. This enables us to provide the best fitting platform and infrastructure software stack based on project requirements. We provide a combination of programming including database programming, API programming, server scripting, integrating with a database to deploy the data as well as an opportunity for easy and almost unlimited scalability. We are offering maintenance & support services, making the businesses of our customers flexible, scalable, and cost-efficient. Whether you need help with a fast-growing startup or a large-scale software solution - we are here to help."
+      }
+    },
+    "Portfolio": {
+      "ViewOurWork": "View Our Work",
+      "Works": {}
+    },
+    "Contacts": {
+      "Title": "Ready to start a project?",
+      "Subtitle": "Want to get in touch? Drop us a line and we’ll be in touch with you shortly.",
+      "Name": "Your Name *",
+      "NameHelper": "This value is too short.",
+      "Email": "Email Address *",
+      "EmailHelper": "This value should be a valid email.",
+      "Website": "Website",
+      "Phone": "Phone Number",
+      "Business": "Business",
+      "Message": "Message *",
+      "MessageHelper": "Message is too short.",
+      "GetInTouch": "Get In Touch",
+      "Dialog": {
+        "SuccessTitle": "Thank you",
+        "SuccessText": "We have received your message and would like to thank you for writing to us. We will reply as soon as possible. <br /> <br /> Team Ocron",
+        "FailureTitle": "Ooops 😕",
+        "FailureText": "Unfortunately something went wrong. Please contact us via info@ocrontechnologies.com or through other mediums. <br /> <br /> Team Ocron",
+        "Close": "Close"
+      }
+    }
+  },
+  "OurWork": {
+    "Title": "Our Work"
+  },
+  "Footer": {
+    "GetInTouch": "Get In Touch",
+    "Location": "Yerevan, Armenia",
+    "Copyright": "© 2019-2023 Ocron Technologies. All rights reserved."
+  }
+}

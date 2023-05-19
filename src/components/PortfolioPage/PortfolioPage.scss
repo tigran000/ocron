@@ -1,0 +1,81 @@
+.PortfolioPage {
+  &__Header {
+    height: 30vh;
+    //background-image: url("../../assets/images/portfolio/Page/top.jpg");
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    align-items: center;
+
+    &__Menu {
+      padding: 35px 40px 12px 40px;
+      width: 100%;
+
+      &__Logo {
+        width: 40px;
+        filter: brightness(0) invert(0);
+        height: auto;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+      }
+    }
+
+    &__Title {
+      font-size: 7.5rem;
+      color: black;
+      margin-top: -40px;
+      font-weight: bold;
+    }
+  }
+
+  &__Projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 8px 4px;
+  }
+
+  @media only screen and (max-width: 1120px) {
+    &__Header {
+      &__Title {
+        font-size: 7rem;
+
+        @media only screen and (max-width: 900px) {
+          font-size: 6rem;
+          margin-top: -25px;
+        }
+      }
+    }
+
+    &__Projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    &__Header {
+      height: 210px;
+
+      &__Title {
+        font-size: 5.5rem;
+        margin-top: -15px;
+
+        &:lang(ru) {
+          font-size: 5.1rem;
+          margin-top: -10px;
+        }
+
+        @media only screen and (max-width: 400px) {
+          font-size: 5rem;
+          margin-top: -6px;
+        }
+      }
+    }
+
+    &__Projects {
+      grid-template-columns: 1fr;
+    }
+  }
+}

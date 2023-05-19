@@ -1,0 +1,44 @@
+.CustomOutlineButton {
+  border-radius: 0 !important;
+  letter-spacing: 3px !important;
+  color: white !important;
+  border-color: white !important;
+  transition: 0.4s !important;
+
+  &:hover {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.CustomOutlineButton--darkfilled {
+  border-radius: 0 !important;
+  letter-spacing: 3px !important;
+  background-color: black !important;
+  color: white !important;
+  transition: background-color 0.4s, color 0.4s, font-size 0.4s !important;
+
+  &:hover {
+    color: black !important;
+    border: 2px solid black !important;
+    background-color: transparent !important;
+  }
+
+  &:disabled {
+    background-color: #0000001f !important;
+    border: none !important;
+  }
+
+  &__Progressbar {
+    color: white !important;
+    padding: 3px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem !important;
+  }
+}

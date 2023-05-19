@@ -1,0 +1,45 @@
+.ItemStack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px !important;
+    height: 214px;
+    box-shadow: 2px 2px 1px -2px rgba(0, 0, 0, 0.02),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.06), 2px 1px 3px 0px rgba(0, 0, 0, 0.08) !important;
+
+    &__Background {
+      width: 320px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__Logo {
+        filter: brightness(0) invert(1);
+        user-select: none;
+        pointer-events: none;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &__Title {
+    font-size: 2.3rem !important;
+    font-weight: 500 !important;
+    font-family: Roboto, Helvetica, Arial, sans-serif !important;
+    letter-spacing: 1px !important;
+    margin-top: 16px !important;
+  }
+
+  &__Subtitle {
+    font-size: 1.8rem !important;
+    margin-top: 4px !important;
+  }
+}

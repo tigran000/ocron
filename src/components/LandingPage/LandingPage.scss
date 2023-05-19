@@ -3,11 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  animation: 0s reveal-background forwards 7s;
+  animation: 0s reveal-background forwards 8s;
 
   &__Background {
     position: absolute;
@@ -15,7 +14,7 @@
     height: 100%;
     z-index: 10;
     color: white;
-    animation: 10s make-black forwards 3s;
+    animation: 7.5s make-black forwards 3s;
   }
 
   &__Main {
@@ -23,38 +22,18 @@
     z-index: 10;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     &__Title {
       font-size: 7rem;
       color: white;
       margin-bottom: 20px;
+      text-align: center;
+      padding: 0 10px;
     }
 
     &__Buttons {
       display: flex;
-      justify-content: space-around;
-
-      &__Services {
-        width: 240px !important;
-        height: 60px !important;
-        border-radius: 0 !important;
-        margin-left: 10px !important;
-        font-size: 1.7rem !important;
-        letter-spacing: 3px !important;
-        color: white !important;
-        border-color: white !important;
-      }
-
-      &__Contact {
-        width: 240px !important;
-        height: 60px !important;
-        border-radius: 0 !important;
-        margin-right: 10px !important;
-        font-size: 1.7rem !important;
-        letter-spacing: 3px !important;
-        color: white !important;
-        border-color: white !important;
-      }
     }
   }
 
@@ -77,34 +56,60 @@
     z-index: -5;
   }
 
-  &__Logo {
+  &__Header {
     position: absolute;
     top: 35px;
-    left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
     z-index: 10;
-    width: 40px;
-    height: auto;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+
+    &__LogoWrapper {
+      &__Logo {
+        width: 40px;
+        height: auto;
+        cursor: pointer;
+        transition: 2.8s ease-in-out;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      &:hover {
+        .LandingPage__Header__LogoWrapper__Logo {
+          transition: 1.6s ease-in;
+          transform: translateY(-150px);
+        }
+      }
+    }
+
+    &__Languages {
+      display: flex;
+      color: white;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-size: 2rem;
+      margin-bottom: 12px;
+
+      &__Text {
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+
+      &__Divider {
+        font-weight: 100;
+        margin: -1px 9px 0 9px;
+      }
+    }
   }
 
   &__Arrow {
     position: absolute;
     bottom: 90px;
     z-index: 10;
-  }
+    transition: 0.4s;
 
-  @media only screen and (max-height: 700px) {
-    &__Main {
-      &__Buttons {
-        &__Services {
-          font-size: 1.5rem !important;
-        }
-
-        &__Contact {
-          font-size: 1.5rem !important;
-        }
-      }
+    &:hover {
+      bottom: 80px;
     }
   }
 
@@ -117,26 +122,16 @@
       &__Buttons {
         flex-direction: column;
         align-items: center;
-
-        &__Services {
-          margin: 20px 0 15px 0 !important;
-          font-size: 1.5rem !important;
-        }
-
-        &__Contact {
-          margin: 0 !important;
-          font-size: 1.5rem !important;
-        }
       }
     }
   }
 }
 
 @keyframes make-black {
-  40% {
+  50% {
     background-color: black;
   }
-  45% {
+  60% {
     background-color: black;
   }
   100% {
@@ -148,7 +143,7 @@
   from {
   }
   to {
-    background-image: url("../../assets/images/services/frontend.jpg");
+    background-image: url("../../assets/images/services/mobile.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

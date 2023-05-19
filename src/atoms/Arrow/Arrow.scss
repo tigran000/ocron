@@ -1,7 +1,7 @@
 .Arrow {
   box-sizing: border-box;
-  height: 30px;
-  width: 30px;
+  height: 26px;
+  width: 26px;
   margin-top: 10px;
   border-style: solid;
   border-color: white;
@@ -24,9 +24,4 @@
     opacity: 1;
     visibility: visible;
   }
-}
-
-.Arrow:hover {
-  border-bottom-width: 4px;
-  border-right-width: 4px;
 }

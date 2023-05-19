@@ -1,0 +1,120 @@
+$black-color: #222222;
+
+.Portfolio {
+  display: flex;
+
+  &__Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 80px 20px 60px 20px;
+
+    &__Title {
+      font-size: 5.4rem;
+      font-family: Quarto A, Quarto B, Baskerville, Baskerville Old Face,
+        Hoefler Text, Garamond, Times New Roman, serif;
+      letter-spacing: -0.012em;
+      line-height: 1;
+      font-weight: 800;
+      color: $black-color;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    &__Carousel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__Parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 900px;
+        width: 100%;
+
+        &__PortfolioItem {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &__Title {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: $black-color;
+            user-select: none;
+            font-family: Helvetica Neue, helvetica, arial, sans-serif;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+              color: #d50000;
+            }
+          }
+
+          &__Subtitle {
+            font-size: 2.1rem;
+            color: $black-color;
+            font-family: Helvetica Neue, helvetica, arial, sans-serif;
+            user-select: none;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+              color: #d50000;
+            }
+          }
+
+          &__Image {
+            object-fit: cover;
+            object-position: center center;
+            pointer-events: none;
+            user-select: none;
+            max-width: 840px;
+          }
+        }
+      }
+    }
+
+    &__ImageLocationShower {
+      background-color: white !important;
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    &__Wrapper {
+      margin: 20px 0 30px 0;
+
+      &__Title {
+        font-size: 4rem;
+        margin-bottom: 60px;
+      }
+
+      &__Carousel {
+        &__Parent {
+          //max-width: 94vw;
+
+          &__PortfolioItem {
+            overflow: hidden;
+
+            &__Title {
+              font-size: 2.5rem;
+              margin-bottom: 12px;
+            }
+
+            &__Subtitle {
+              font-size: 2rem;
+            }
+
+            &__Image {
+              max-width: 105vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,22 +2,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
   height: 100vh;
-  padding-top: 90px;
+  padding-top: 70px;
   overflow: hidden;
 
   &__Content {
-    max-width: 700px;
+    max-width: 690px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:lang(ru) {
+      max-width: 800px;
+    }
 
     &__Title {
-      font-size: 5rem;
-      font-family: Quarto A, Quarto B, Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
-      letter-spacing: -0.012em;
+      font-size: 4.4rem;
+      font-family: Quarto A, Quarto B, Baskerville, Baskerville Old Face,
+        Hoefler Text, Garamond, Times New Roman, serif;
+      letter-spacing: 0.5px;
       line-height: 1;
       font-weight: 800;
       color: #222222;
       text-align: center;
+
+      &:lang(ru) {
+        font-size: 4.2rem;
+      }
     }
 
     &__Text {
@@ -28,34 +39,52 @@
       line-height: 1.72;
       font-weight: 300;
       color: #222222;
+
+      &:lang(ru) {
+        max-width: 700px;
+      }
     }
   }
 
-  &__Image {
+  &__Parallax {
     position: relative;
-  }
+    pointer-events: none;
+    z-index: -100;
 
-  @media only screen and (max-height: 700px) {
     &__Image {
       height: 400px;
     }
   }
 
   @media only screen and (max-width: 768px) {
+    padding-top: 50px;
+
     &__Content {
       margin: 0px 20px;
 
       &__Title {
-        font-size: 3.5rem !important;
+        font-size: 3rem !important;
+
+        &:lang(ru) {
+          font-size: 2.7rem !important;
+        }
       }
 
       &__Text {
-        font-size: 1.7rem !important;
+        font-size: 1.5rem !important;
+        text-align: justify;
+
+        &:lang(ru) {
+          font-size: 1.4rem !important;
+          line-height: 1.68;
+        }
       }
     }
 
-    &__Image {
-      height: 500px;
+    &__Parallax {
+      &__Image {
+        height: 360px;
+      }
     }
   }
 }

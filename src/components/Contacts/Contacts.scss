@@ -18,14 +18,19 @@ $black-color: #222222;
 
       &__Title {
         font-size: 6rem;
-        font-family: Quarto A, Quarto B, Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman,
-          serif;
+        font-family: Quarto A, Quarto B, Baskerville, Baskerville Old Face,
+          Hoefler Text, Garamond, Times New Roman, serif;
         letter-spacing: -0.012em;
         line-height: 1;
         font-weight: 800;
         color: $black-color;
         margin-bottom: 30px;
+
+        &:lang(ru) {
+          font-size: 5.6rem;
+        }
       }
+
       &__Subtitle {
         font-size: 1.8rem;
         font-family: Helvetica Neue, helvetica, arial, sans-serif;
@@ -35,6 +40,7 @@ $black-color: #222222;
         margin-bottom: 40px;
       }
     }
+
     &__Inputs {
       display: flex;
       flex-direction: column;
@@ -43,13 +49,35 @@ $black-color: #222222;
       &__InputField {
         width: 100%;
 
-        &__InputText {
-          font-size: 1.7rem !important;
+        &:hover {
+          .Contacts__Content__Inputs__InputField__InputText {
+            padding-left: 8px !important;
+          }
+
+          .Contacts__Content__Inputs__InputField__InputText--multi {
+            padding-left: 8px !important;
+          }
         }
+
+        &__InputText {
+          color: #000000 !important;
+          font-size: 1.7rem !important;
+          padding-bottom: 4px !important;
+          transition: 0.3s !important;
+        }
+
+        &__InputText--multi {
+          color: #000000 !important;
+          font-size: 1.7rem !important;
+          padding-bottom: 12px !important;
+          transition: 0.3s !important;
+        }
+
         &__HelperText {
           font-size: 1.3rem !important;
         }
       }
+
       &__Group {
         width: 100%;
         display: flex;
@@ -57,11 +85,18 @@ $black-color: #222222;
 
         &__InputField {
           width: 48%;
+
+          &:hover {
+            .Contacts__Content__Inputs__InputField__InputText {
+              padding-left: 8px !important;
+            }
+          }
         }
       }
+
       &__Submit {
         margin-top: 40px !important;
-        height: 50px;
+        height: 54px;
         width: 260px;
 
         &__Text {
@@ -90,6 +125,7 @@ $black-color: #222222;
 
       &__CloseButton {
         color: $black-color !important;
+        margin-top: -20px !important;
 
         &__Text {
           font-size: 1.4rem !important;
@@ -149,6 +185,10 @@ $black-color: #222222;
       &__Titles {
         &__Title {
           font-size: 3.5rem;
+
+          &:lang(ru) {
+            font-size: 3.4rem;
+          }
         }
         &__Subtitle {
           font-size: 1.7rem;
