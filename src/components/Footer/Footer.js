@@ -36,10 +36,8 @@ function Footer() {
             {t("Footer.GetInTouch")}
           </p>
           <p className="Footer__Container__Contacts__Text">{emailAddress}</p>
-          <p className="Footer__Container__Contacts__Text">+374 41 014 001</p>
-          <p className="Footer__Container__Contacts__Text">
-            {t("Footer.Location")}
-          </p>
+          <p className="Footer__Container__Contacts__Text">{t("Footer.Location.Poland")}: +48 451 059 148</p>
+          <p className="Footer__Container__Contacts__Text">{t("Footer.Location.Serbia")}: +381 61 16 00 317</p>
           <div className="Footer__Container__Contacts__Icons">
             <IconButton
               className="Footer__Container__Contacts__Icons__IconButton"

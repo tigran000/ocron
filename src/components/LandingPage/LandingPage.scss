@@ -71,15 +71,7 @@
         width: 40px;
         height: auto;
         cursor: pointer;
-        transition: 2.8s ease-in-out;
         -webkit-tap-highlight-color: transparent;
-      }
-
-      &:hover {
-        .LandingPage__Header__LogoWrapper__Logo {
-          transition: 1.6s ease-in;
-          transform: translateY(-150px);
-        }
       }
     }
 

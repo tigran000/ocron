@@ -57,7 +57,10 @@
   },
   "Footer": {
     "GetInTouch": "Связаться",
-    "Location": "Ереван, Армения",
+    "Location": {
+      "Poland": "Польша",
+      "Serbia": "Сербия"
+    },
     "Copyright": "© 2019-2023 Ocron Technologies. Все права защищены."
   }
 }

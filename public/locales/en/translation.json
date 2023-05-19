@@ -57,7 +57,10 @@
   },
   "Footer": {
     "GetInTouch": "Get In Touch",
-    "Location": "Yerevan, Armenia",
+    "Location": {
+      "Poland": "Poland",
+      "Serbia": "Serbia"
+    },
     "Copyright": "© 2019-2023 Ocron Technologies. All rights reserved."
   }
 }
